@@ -1,10 +1,16 @@
+authors = ["Stephan Sahm <stephan.sahm@jolin.io> and contributors"]
 name = "ConfigurationsENV"
 uuid = "4a543033-a920-4921-b9ec-d69f25e1cf2a"
-authors = ["Stephan Sahm <stephan.sahm@jolin.io> and contributors"]
 version = "0.1.0"
 
 [compat]
 julia = "1.6"
+
+[deps]
+Configurations = "5218b696-f38b-4ac9-8b61-a12ec717816d"
+Continuables = "79afa230-ca09-11e8-120b-5decf7bf5e25"
+DataStructures = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
+Preferences = "21216c6a-2e73-6563-6e65-726566657250"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
