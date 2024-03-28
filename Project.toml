@@ -1,7 +1,7 @@
-name = "ConfigurationsEnv"
+name = "ConfigurationsENV"
 uuid = "4a543033-a920-4921-b9ec-d69f25e1cf2a"
 authors = ["Stephan Sahm <stephan.sahm@jolin.io> and contributors"]
-version = "1.0.0-DEV"
+version = "0.1.0"
 
 [compat]
 julia = "1.6"

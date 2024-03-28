@@ -1,14 +1,14 @@
 ```@meta
-CurrentModule = ConfigurationsEnv
+CurrentModule = ConfigurationsENV
 ```
 
-# ConfigurationsEnv
+# ConfigurationsENV
 
-Documentation for [ConfigurationsEnv](https://github.com/jolin-io/ConfigurationsEnv.jl).
+Documentation for [ConfigurationsENV](https://github.com/jolin-io/ConfigurationsENV.jl).
 
 ```@index
 ```
 
 ```@autodocs
-Modules = [ConfigurationsEnv]
+Modules = [ConfigurationsENV]
 ```

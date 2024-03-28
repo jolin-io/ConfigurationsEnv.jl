@@ -1,14 +1,14 @@
-using ConfigurationsEnv
+using ConfigurationsENV
 using Documenter
 
-DocMeta.setdocmeta!(ConfigurationsEnv, :DocTestSetup, :(using ConfigurationsEnv); recursive=true)
+DocMeta.setdocmeta!(ConfigurationsENV, :DocTestSetup, :(using ConfigurationsENV); recursive=true)
 
 makedocs(;
-    modules=[ConfigurationsEnv],
+    modules=[ConfigurationsENV],
     authors="Stephan Sahm <stephan.sahm@jolin.io> and contributors",
-    sitename="ConfigurationsEnv.jl",
+    sitename="ConfigurationsENV.jl",
     format=Documenter.HTML(;
-        canonical="https://jolin-io.github.io/ConfigurationsEnv.jl",
+        canonical="https://jolin-io.github.io/ConfigurationsENV.jl",
         edit_link="main",
         assets=String[],
     ),
@@ -18,6 +18,6 @@ makedocs(;
 )
 
 deploydocs(;
-    repo="github.com/jolin-io/ConfigurationsEnv.jl",
+    repo="github.com/jolin-io/ConfigurationsENV.jl",
     devbranch="main",
 )

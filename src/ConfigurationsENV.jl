@@ -1,4 +1,4 @@
-module ConfigurationsEnv
+module ConfigurationsENV
 
 # Write your package code here.
 

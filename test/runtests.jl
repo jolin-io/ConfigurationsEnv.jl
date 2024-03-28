@@ -1,6 +1,6 @@
-using ConfigurationsEnv
+using ConfigurationsENV
 using Test
 
-@testset "ConfigurationsEnv.jl" begin
+@testset "ConfigurationsENV.jl" begin
     # Write your tests here.
 end
