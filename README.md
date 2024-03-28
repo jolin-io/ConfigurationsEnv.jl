@@ -23,6 +23,7 @@ env = Dict(
 )
 
 using ConfigurationsENV
+
 config = from_env(Opt2, env, prefix="PREFIX_", separator="_")  
 # Opt2(Opt1(true, nothing), "hello world")
 
@@ -37,8 +38,8 @@ In case you just want to parse a subset of the options fields from environment v
 
 ```julia
 env = Dict("PREFIX__A__A" => "true")
-nested_dict = from_env(Opt2, env, prefix="PREFIX__", return_dict=true)
 
+nested_dict = from_env(Opt2, env, prefix="PREFIX__", return_dict=true)
 # DataStructures.DefaultDict{String, Any, typeof(ConfigurationsENV.RecursiveDict)} with 1 entry:
 #   "a" => DefaultDict{String, Any, typeof(RecursiveDict)}("a"=>true)
 
