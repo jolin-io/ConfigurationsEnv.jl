@@ -16,14 +16,14 @@ end
     b::String
 end
 
+using ConfigurationsENV
+
 # without an explicit `env` argument to `from_env`, the global `ENV` is used
 env = Dict(
     "PREFIX_A_A" => "true",
     "PREFIX_A_B" => "",
     "PREFIX_B" => "hello world",
 )
-
-using ConfigurationsENV
 
 config = from_env(Opt2, env, prefix="PREFIX_", separator="_")  
 # Opt2(Opt1(true, nothing), "hello world")
@@ -43,7 +43,10 @@ env = Dict("PREFIX__A__A" => "true")
 nested_dict = from_env(Opt2, env, prefix="PREFIX__", return_dict=true)
 # DataStructures.DefaultDict{String, Any, typeof(ConfigurationsENV.RecursiveDict)} with 1 entry:
 #   "a" => DefaultDict{String, Any, typeof(RecursiveDict)}("a"=>true)
+```
 
+This dict can then be merged with other sources of parameters like TOML files or dicts.
+```julia
 from_dict(Opt2, merge(nested_dict, Dict("b" => "works")))
 # Opt2(Opt1(true, nothing), "works")
 ```
