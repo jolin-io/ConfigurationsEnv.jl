@@ -16,6 +16,7 @@ end
     b::String
 end
 
+# without an explicit `env` argument to `from_env`, the global `ENV` is used
 env = Dict(
     "PREFIX_A_A" => "true",
     "PREFIX_A_B" => "",
