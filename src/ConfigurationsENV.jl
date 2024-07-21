@@ -21,7 +21,10 @@ function from_string(u::Union, str)
     end
 end
 from_string(::Type{String}, str) = string(str)
-from_string(::Type{T}, str) where {T<:Number} = parse(T, str)
+_defaulttype(::Type{<:Complex}) = Complex{Float64}
+_defaulttype(::Type{<:Real}) = Float64
+_defaulttype(::Type{<:Integer}) = Int
+from_string(::Type{T}, str) where {T<:Number} = isconcretetype(T) ? parse(T, str) : parse(_defaulttype(T), str)
 from_string(::Type{T}, str) where {T} = T(str)
 
 @cont function nestedkeys_and_types(::Type{T}) where {T}

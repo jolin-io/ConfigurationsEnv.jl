@@ -1,7 +1,7 @@
 name = "ConfigurationsENV"
 uuid = "4a543033-a920-4921-b9ec-d69f25e1cf2a"
 authors = ["Stephan Sahm <stephan.sahm@jolin.io> and contributors"]
-version = "0.1.0"
+version = "0.1.1"
 
 [deps]
 Configurations = "5218b696-f38b-4ac9-8b61-a12ec717816d"
